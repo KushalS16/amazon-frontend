@@ -1,0 +1,159 @@
+.navbarbelt {
+    background-color: #131921;
+    display: flex;
+    align-items: center; /* Ensures vertical alignment of all items */
+    padding: 0 10px; /* Adds padding for better spacing */
+    width: 100%;
+    height: 60px; /* Matches Amazon's navbar height */
+    color: white;
+    box-sizing: border-box;
+}
+
+.leftNavbelt {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Provides space between items */
+}
+
+.leftNavbeltLogo {
+    width: auto; /* Allows the logo to use its intrinsic width */
+    height: auto; /* Allows intrinsic scaling */
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center; /* Vertically aligns the logo */
+    cursor: pointer;
+    padding: 0 5px; /* Adds some spacing around the logo */
+}
+
+.leftNavbeltLogo:hover {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 4px; /* Adjust padding to accommodate hover effect */
+}
+
+.amazonLogoNavbar {
+    height: 40px; /* Matches Amazon's logo height */
+    width: auto; /* Maintains the logo's aspect ratio */
+    object-fit: contain; /* Ensures proper scaling */
+    cursor: pointer;
+}
+
+.navbar_inLogo {
+    margin-left: 5px; /* Adjust the text position */
+    font-weight: 400;
+    line-height: 1.5; /* Matches Amazon's text styling */
+    color: white;
+}
+
+/* Location part in navbarbelt */
+.navbarbeltLocation {
+    display: flex;
+    gap: 5px;
+    padding: 8px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.navbarbeltLocation:hover {
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.navbarbeltLocationImg {
+    width: 15px;
+    padding-top: 7px;
+}
+
+.navbarbeltLocationImgIcon {
+    margin-top: 3px;
+}
+
+.navbarbeltLocationPlace {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarbeltLocationTop {
+    font-size: 12px;
+    color: #ccc;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.navbarbeltLocationBottom {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+/* Search box in navbarbelt */
+.navbarbeltSearchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 4px;
+    width: 50%;
+}
+
+.navbarbeltSearchDiv {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #131921;
+}
+
+.navbarbeltSearchBoxAll {
+    display: flex;
+    background-color: #cdcdcd;
+    gap: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    color: #999999;
+}
+
+.navbarbeltSearchBoxAllText {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Navbarbelt input search box */
+.navbarBeltInputSearchBox {
+    padding: 5px;
+    width: 84%;
+    border: none; /* Removed unnecessary borders */
+    &::placeholder {
+        color: gray;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+/* Search icon in navbarbelt */
+.searchIconNavbarbelt {
+    background-color: #febd69;
+    font-size: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Correctly aligns the icon */
+    &:hover {
+        background-color: #f1ba73;
+    }
+}
+
+.searchIconNavbarbeltIcon {
+    font-size: 20px; /* Matches Amazon's search icon size */
+    color: black;
+}
