@@ -28,20 +28,21 @@ const Navbarbelt = () => {
             </div>
 
             <div className="navbarbeltSearchBox">
-                <div className='navbarbeltSearchDiv'>
-                    <div className='navbarbeltSearchBoxAll'>
-                        <div className='navbarbeltSearchBoxAllText'>All</div>
-                        <ArrowDropDownOutlinedIcon sx={{ fontsize: "20px" }} />
-                    </div>
-                    <input type='text' className='navbarbeltSearchBox' placeholder='Search Amazon.in' />
-                    <div className='searchIconNavbarbelt'>
-                        <SearchIcon sx={{ fontsize: "26px" }} className='searchIconNavbarbelt' />
-                    </div>
-                </div>
-            </div>
+    <div className="navbarbeltSearchDiv">
+        <div className="navbarbeltSearchBoxAll">
+            <div className="navbarbeltSearchBoxAllText">All</div>
+            <ArrowDropDownOutlinedIcon sx={{ fontSize: "16px" }} />
+        </div>
+        <input type="text" className="navbarbeltInputSearchBox" placeholder="Search Amazon.in" />
+        <div className="searchIconNavbarbelt">
+            <SearchIcon sx={{ fontSize: "20px" }} />
+        </div>
+    </div>
+</div>
+
 
             <div className="rightsideNavbarbelt">
-                <div className='indianFlagCode'>
+                <div className='indiaFlagCode'>
                     <img src={india} className='indiaFlag' alt='India Flag'/>
                     <div className='indiaCodeNavbarbelt'>EN <ArrowDropDownOutlinedIcon sx={{ fontsize: 16, marginTop: 1, marginLeft: -0.4 }} className='indiaCodeNavbarbeltDrp' /></div>
                 </div>

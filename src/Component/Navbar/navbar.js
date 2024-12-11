@@ -8,7 +8,6 @@ const Navbar = () => {
         <div className='navbar'>
             <Navbarbelt/>
             <NavbarBanner/>
-
         </div>
     )
 }
