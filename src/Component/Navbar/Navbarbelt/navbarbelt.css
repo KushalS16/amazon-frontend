@@ -1,72 +1,55 @@
+/* Main Navbar */
 .navbarbelt {
-    background-color: #131921;
+    background-color: #232f3e;
     display: flex;
-    align-items: center; /* Ensures vertical alignment of all items */
-    padding: 0 10px; /* Adds padding for better spacing */
-    width: 100%;
-    height: 60px; /* Matches Amazon's navbar height */
-    color: white;
+    justify-content: space-between;  /* Align sections */
+    align-items: center;
+    padding: 0 15px;
+    height: 60px;
     box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
+/* Left Section: Logo */
 .leftNavbelt {
     display: flex;
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Provides space between items */
+    align-items: center;
+    gap: 10px;
 }
 
 .leftNavbeltLogo {
-    width: auto; /* Allows the logo to use its intrinsic width */
-    height: auto; /* Allows intrinsic scaling */
-    text-decoration: none;
-    color: white;
     display: flex;
-    align-items: center; /* Vertically aligns the logo */
+    align-items: center;
     cursor: pointer;
-    padding: 0 5px; /* Adds some spacing around the logo */
-}
-
-.leftNavbeltLogo:hover {
-    border: 1px solid;
-    border-radius: 3px;
-    padding: 4px; /* Adjust padding to accommodate hover effect */
 }
 
 .amazonLogoNavbar {
-    height: 40px; /* Matches Amazon's logo height */
-    width: auto; /* Maintains the logo's aspect ratio */
-    object-fit: contain; /* Ensures proper scaling */
-    cursor: pointer;
+    height: 35px;
+    width: auto;
+    object-fit: contain;
 }
 
 .navbar_inLogo {
-    margin-left: 5px; /* Adjust the text position */
-    font-weight: 400;
-    line-height: 1.5; /* Matches Amazon's text styling */
+    font-size: 18px;
+    font-weight: 700;
     color: white;
 }
 
-/* Location part in navbarbelt */
+/* Location Section */
 .navbarbeltLocation {
     display: flex;
+    align-items: center;
     gap: 5px;
-    padding: 8px;
     height: 30px;
     cursor: pointer;
 }
 
-.navbarbeltLocation:hover {
-    border-radius: 3px;
-    border: 1px solid;
-}
-
 .navbarbeltLocationImg {
-    width: 15px;
-    padding-top: 7px;
-}
-
-.navbarbeltLocationImgIcon {
-    margin-top: 3px;
+    color: #fff;
+    font-size: 22px;
 }
 
 .navbarbeltLocationPlace {
@@ -76,84 +59,237 @@
 
 .navbarbeltLocationTop {
     font-size: 12px;
-    color: #ccc;
-    letter-spacing: 0.5px;
+    color: #fff;
     font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;  /* Keep the text in a single line */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .navbarbeltLocationBottom {
     font-size: 14px;
     font-weight: 600;
-    line-height: 10px;
+    color: #f3a847;
 }
 
-/* Search box in navbarbelt */
+/* Search Box */
 .navbarbeltSearchBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 4px;
-    width: 50%;
+    width: 40%; /* Reduced size of the search box */
 }
 
 .navbarbeltSearchDiv {
     display: flex;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
-    border: 1px solid #131921;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
 .navbarbeltSearchBoxAll {
     display: flex;
-    background-color: #cdcdcd;
-    gap: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    justify-content: center;
+    background-color: #f4a261;
     align-items: center;
-    padding: 5px;
+    justify-content: center;
+    padding: 10px;
     cursor: pointer;
-    color: #999999;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: white;
 }
 
 .navbarbeltSearchBoxAllText {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
 
-/* Navbarbelt input search box */
-.navbarBeltInputSearchBox {
-    padding: 5px;
-    width: 84%;
-    border: none; /* Removed unnecessary borders */
-    &::placeholder {
-        color: gray;
-        font-size: 15px;
-        font-weight: 500;
-    }
-    &:focus {
-        outline: none;
-    }
+.navbarbeltSearchBox {
+    width: 80%;
+    height: 40px;
+    border: none;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: none;
 }
 
-/* Search icon in navbarbelt */
+.navbarbeltSearchBox:focus {
+    border: 1px solid #f3a847;
+}
+
 .searchIconNavbarbelt {
-    background-color: #febd69;
-    font-size: 10px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center; /* Correctly aligns the icon */
-    &:hover {
-        background-color: #f1ba73;
-    }
+    align-items: center;
+    background-color: #f3a847;
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
 }
 
-.searchIconNavbarbeltIcon {
-    font-size: 20px; /* Matches Amazon's search icon size */
-    color: black;
+/* Remove extra margin on icon */
+.searchIconNavbarbelt svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+/* Right Section */
+.rightsideNavbarbelt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Flag & Language (EN and Flag) */
+.indianFlagCode {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds space between flag and EN text */
+    padding: 6px 12px; /* Increased padding for proper spacing */
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 14px; /* Proper font size */
+    height: 36px; /* Consistent height for flag and text */
+    justify-content: center; /* Align items in the center */
+}
+
+.indianFlagCode:hover {
+    border: 1px solid white; /* Hover effect with only white border */
+}
+
+.indiaFlag {
+    width: 18px; /* Flag width */
+    height: 18px; /* Flag height */
+    object-fit: contain;
+}
+.indiaCodeNavbarbelt {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap; /* Prevents wrapping */
+    line-height: 1.2; /* Adjust line-height for better spacing */
+    padding: 0; /* Ensure padding only applies to container */
+}
+
+.indianFlagCode:hover .indiaCodeNavbarbelt {
+    border: 1px solid white; /* Add white border effect on hover */
+}
+
+
+
+.indiaCodeNavbarbeltDrp {
+    font-size: 12px;
+}
+
+/* Hover effect for Language */
+
+
+/* Adjustments for Hello Sign In */
+.helloSignInNavbarbelt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0;
+    cursor: pointer;
+    color: white;
+    max-width: 160px; /* Limit width to prevent overflow */
+    text-overflow: ellipsis;
+    white-space: normal; /* Allow wrapping to 2 lines */
+}
+
+.helloTopNavbarbelt {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.helloSignInNavbarbelt .helloTopNavbarbelt {
+    max-width: 100%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.helloSignInNavbarbelt:hover .helloTopNavbarbelt {
+    font-weight: 600;
+}
+
+/* Cart Section */
+.cartNavbarbelt {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cartTitle {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.cartText {
+    margin-left: 5px;
+}
+
+/* Hover Effect (White Border on Hover) */
+.navbarbeltLocation:hover,
+.helloSignInNavbarbelt:hover,
+.cartNavbarbelt:hover {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Prevent Position Shifting */
+.indianFlagCode,
+.navbarbeltLocation,
+.helloSignInNavbarbelt {
+    transition: border 0.3s ease; /* Smooth transition for the border */
+}
+
+.indianFlagCode:hover,
+.navbarbeltLocation:hover,
+.helloSignInNavbarbelt:hover {
+    border: 1px solid white; /* White border on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbarbelt {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .leftNavbelt,
+    .rightsideNavbarbelt {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbarbeltSearchBox {
+        width: 100%;
+    }
+
+    .navbarbeltSearchDiv {
+        width: 100%;
+    }
+
+    .searchIconNavbarbelt {
+        width: 40px;
+    }
+
+    .navbar_inLogo {
+        font-size: 16px;
+    }
 }

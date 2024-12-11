@@ -1,0 +1,8 @@
+.navbarBanner{
+    background-color: #232f3e;
+    padding: 0 0 0 11px;
+    display: flex;
+    height: 39px;
+    justify-content: space-between;
+    color: white;
+}

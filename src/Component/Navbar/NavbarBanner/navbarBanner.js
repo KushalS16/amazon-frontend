@@ -3,7 +3,14 @@ import './navbarBanner.css';
 
 const NavbarBanner = () => {
     return (
-        <div>NavbarBanner</div>
+        <div className="navbarBanner">
+        <div className="navbarBannerOptionsLeft">
+            Left Side
+        </div>
+       <div className="navbarBannerRightSide">
+            Right Side
+        </div>
+        </div>
     )
 }
 
